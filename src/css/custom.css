@@ -6,14 +6,103 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: rgb(33, 175, 144);
-  --ifm-color-primary-darker: rgb(31, 165, 136);
-  --ifm-color-primary-darkest: rgb(26, 136, 112);
-  --ifm-color-primary-light: rgb(70, 203, 174);
-  --ifm-color-primary-lighter: rgb(102, 212, 189);
-  --ifm-color-primary-lightest: rgb(146, 224, 208);
-  --ifm-code-font-size: 95%;
+  /* Globals */
+  --color-text-primary: #262633;
+  --color-text-secondary: #85889e;
+  --color-text-tertiary: #b3b8cc;
+  --color-text-negative: #ff3333;
+  --color-text-positive: #00a85a;
+  --color-line-normal: #d8dce6;
+  --color-surface-submerged: #f7f8fa;
+  --color-surface-elevated-0: #ffffff;
+  --color-surface-elevated-100: #ffffff;
+  --color-surface-elevated-200: #ffffff;
+  --color-surface-overlay: rgba(38, 38, 51, 0.50);
+  --color-decor-neutral-soft: #f7f8fa;
+  --color-decor-neutral: #f1f2f5;
+  --color-decor-neutral-hard: #85889e;
+  --color-decor-red-soft: #fff5f2;
+  --color-decor-red: #ffe2db;
+  --color-decor-red-hard: #ff3333;
+  --color-decor-orange-soft: #fffae5;
+  --color-decor-orange: #ffedba;
+  --color-decor-orange-hard: #ff8800;
+  --color-decor-yellow-soft: #fffdde;
+  --color-decor-yellow: #fff6b2;
+  --color-decor-yellow-hard: #ffcc00;
+  --color-decor-green-soft: #edfff4;
+  --color-decor-green: #cff7e0;
+  --color-decor-green-hard: #00a85a;
+  --color-decor-blue-soft: #edfaff;
+  --color-decor-blue: #d6f1ff;
+  --color-decor-blue-hard: #0077ff;
+  --color-decor-violet-soft: #faf2ff;
+  --color-decor-violet: #f2deff;
+  --color-decor-violet-hard: #944dff;
+  --color-static-transparent: rgba(255, 255, 255, 0.00);
+  --color-static-white-soft: rgba(255, 255, 255, 0.90);
+  --color-static-white: #ffffff;
+  --color-static-black: #000000;
+  --color-bg-default-soft: #f7f8fa;
+  --color-bg-default-soft-hovered: #f1f2f5;
+  --color-bg-default-soft-pressed: #e6e9f0;
+  --color-bg-default: #f1f2f5;
+  --color-bg-default-hovered: #e6e9f0;
+  --color-bg-default-pressed: #dfe2eb;
+  --color-bg-default-hard: #404152;
+  --color-bg-default-hard-hovered: #333342;
+  --color-bg-default-hard-pressed: #262633;
+  --color-bg-brand: #ffdb4d;
+  --color-bg-brand-hovered: #ffd633;
+  --color-bg-brand-pressed: #ffcc00;
+  --color-bg-accent: #5281ff;
+  --color-bg-accent-hovered: #ff4d4d;
+  --color-bg-accent-pressed: #ff4d4d;
+  --color-bg-negative: #ff3333;
+  --color-bg-negative-hovered: #ff0000;
+  --color-bg-negative-pressed: #f20008;
+  --color-bg-disabled: #f7f8fa;
+  --color-text-on-default: #262633;
+  --color-text-on-default-hard: #ffffff;
+  --color-text-on-brand: #361600;
+  --color-text-on-accent: #ffffff;
+  --color-text-on-negative: #ffffff;
+  --color-text-on-disabled: #c9cddb;
+  --color-border-default: #d8dce6;
+  --color-border-default-hard: #404152;
+  --color-border-brand: #ffdb4d;
+  --color-border-accent: #ff4d4d;
+  --color-border-negative: #ff3333;
+  --color-border-disabled: #e6e9f0;
+  --color-link-default: #0077ff;
+  --color-link-default-hovered: #ff4d4d;
+  --color-system-focus: #ffdb4d;
+  --color-system-carret: #262633;
+  --color-system-highlight: rgba(0, 119, 255, 0.24);
+
+  /* Website */
+  --ifm-color-primary: var(--color-bg-accent);
+  --ifm-font-color-base: var(--color-text-primary);
+  --ifm-toc-link-color: var(--color-text-secondary);
+
+  /* Editor */
+  --sp-colors-accent: var(--color-bg-accent);
+  --sp-colors-fg-active: var(--color-bg-accent);
+  --sp-colors-bg-default: #fff;
+  --theme-plain: #24292e;
+  --theme-comment: #6a737d;
+  --theme-keyword: #d73a49;
+  --theme-tag: #22863a;
+  --theme-punctuation: #24292e;
+  --theme-definition: #6f42c1;
+  --theme-property: #005cc5;
+  --theme-static: #032f62;
+  --theme-string: #032f62;
+}
+
+.table-of-contents__left-border[class],
+.docSidebarContainer_node_modules-\@docusaurus-theme-classic-lib-next-theme-DocPage-styles-module[class] {
+  border-width: 0;
 }
 
 .docusaurus-highlight-code-line {

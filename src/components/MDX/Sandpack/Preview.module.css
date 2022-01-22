@@ -1,0 +1,10 @@
+.Container {
+  padding: 16px;
+  overflow: auto;
+}
+
+.Iframe[data-hidden="true"] {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}

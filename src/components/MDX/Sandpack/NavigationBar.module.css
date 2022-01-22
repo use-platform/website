@@ -1,0 +1,55 @@
+.Container {
+  height: 40px;
+  border-bottom: 1px solid var(--color-border-default);
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+}
+
+.Tabs :global(.sp-tab-button) {
+  cursor: pointer;
+}
+
+.Tabs :global(.sp-tab-button[data-active=true]) {
+  border-width: 2px;
+}
+
+.Tabs {
+  height: 100%;
+  font-size: 14px;
+}
+
+.Tabs :global(.sp-tabs) {
+  background: 0;
+}
+
+.Actions {
+  margin-left: auto;
+  height: 100%;
+}
+
+.ActionButton {
+  cursor: pointer;
+  padding: 0;
+  background: 0;
+  border: 0;
+  color: var(--color-text-primary);
+  height: 100%;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 8px;
+  font-size: 14px;
+}
+
+.ActionButton:hover {
+  text-decoration: none;
+  color: var(--color-bg-accent);
+}
+
+.ActionButton + .ActionButton {
+  margin-left: 8px;
+}
+
+.ActionButton :global(.SvgIcon) {
+  margin-right: 8px;
+}

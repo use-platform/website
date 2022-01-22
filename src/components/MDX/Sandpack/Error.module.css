@@ -1,0 +1,21 @@
+.Container {
+  background-color: var(--color-surface-elevated-0);
+  border-radius: 8px;
+  border: 2px solid var(--color-border-negative);
+  padding: 16px;
+}
+
+.Title {
+  color: var(--color-text-negative);
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.Text {
+  white-space: pre-wrap;
+  color: var(--color-text-primary);
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 14px;
+  background-color: inherit;
+  margin-bottom: 0;
+}

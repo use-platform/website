@@ -1,0 +1,45 @@
+.Container {
+  display: flex;
+}
+
+.Container :global(.sp-stack) {
+  flex: 1 1 0;
+  width: 50%;
+}
+
+.Container :global(.cm-gutters) {
+  background-color: var(--sp-colors-bg-default);
+  z-index: 1;
+}
+
+.Container > :global(.sp-stack:not(:first-child))  {
+  background-color: var(--color-surface-submerged);
+  border-left: 1px solid var(--color-border-default);
+  position: relative;
+}
+
+.ExpandButton {
+  border: 0;
+  padding: 0;
+  background: 0;
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  border-top: 1px solid var(--color-border-default);
+  padding: 0 16px;
+  font-size: 14px;
+}
+
+.ExpandButton:hover {
+  background-color: var(--color-bg-default-soft-hovered);
+}
+
+.ExpandButton:active {
+  background-color: var(--color-bg-default-soft-pressed);
+}
+
+.ExpandButton :global(.SvgIcon) {
+  margin-right: 8px;
+}
