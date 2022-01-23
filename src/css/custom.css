@@ -76,7 +76,7 @@
   --color-border-disabled: #e6e9f0;
   --color-link-default: #0077ff;
   --color-link-default-hovered: #ff4d4d;
-  --color-system-focus: #ffdb4d;
+  --color-system-focus: var(--color-bg-accent);
   --color-system-carret: #262633;
   --color-system-highlight: rgba(0, 119, 255, 0.24);
 
