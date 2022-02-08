@@ -47,6 +47,7 @@ export const SandpackView: VFC<SandpackViewProps> = (props) => {
             maxHeight: isExpanded ? '' : 406,
           }}
           showLineNumbers
+          showTabs={false}
         />
         <Preview
           isExpanded={isExpanded}
