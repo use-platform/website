@@ -53,9 +53,13 @@ export const Sandpack: FC = (props) => {
     {},
   )
 
-  files['/styles.css'] = {
-    code: [sandboxStyle, files['/styles.css']?.code ?? ''].join('\n\n'),
+  files['/global.css'] = {
+    code: sandboxStyle,
     hidden: true,
+  }
+
+  files['/styles.css'] = {
+    code: [files['/styles.css']?.code ?? ''].join('\n\n'),
   }
 
   return (
