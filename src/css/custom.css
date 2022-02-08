@@ -84,6 +84,9 @@
   --ifm-color-primary: var(--color-bg-accent);
   --ifm-font-color-base: var(--color-text-primary);
   --ifm-toc-link-color: var(--color-text-secondary);
+  --ifm-menu-color: var(--color-text-primary);
+  --ifm-menu-color-background-active: var(--color-bg-default-pressed);
+  --ifm-menu-color-background-hover: var(--color-bg-default-hovered);
 
   /* Editor */
   --sp-colors-accent: var(--color-bg-accent);
