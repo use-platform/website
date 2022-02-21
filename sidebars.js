@@ -36,7 +36,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Semantic',
-      items: ['semantic/button'],
+      items: ['semantic/button', 'semantic/label'],
     },
   ],
 }
