@@ -41,21 +41,13 @@ jobs:
       - run: npm ci
       - run: npm run build
 
-      - name: Deploy Latest
+      - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.ref == 'refs/heads/master' }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ${{ env.PUBLISH_DIR }}
-          destination_dir: docs/.versions/latest
-
-      - name: Deploy Preview
-        uses: peaceiris/actions-gh-pages@v3
-        if: ${{ github.ref != 'refs/heads/master' }}
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ${{ env.PUBLISH_DIR }}
-          destination_dir: docs/.versions/${{ env.PR_NAME }}
+          destination_dir: build
 
       - uses: actions/checkout@v2
         with:
